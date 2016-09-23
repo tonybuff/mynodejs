@@ -1,0 +1,11 @@
+﻿extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div.bodyContent.container this is new page
+
+  p 共#{data.length}个小朋友
+  ul.list-group
+  each item in data
+     li.list-group-item #{item.Name}今年 #{item.age}岁
